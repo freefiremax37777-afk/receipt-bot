@@ -45,7 +45,7 @@ async def bill(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     file = generate_receipt(name, amount)
 
-    base_url = "https://YOUR-RENDER-URL.onrender.com"
+    base_url = "https://receipt-bot-cofv.onrender.com"
     link = f"{base_url}/receipt?file={file}"
 
     qr = qrcode.make(link)
