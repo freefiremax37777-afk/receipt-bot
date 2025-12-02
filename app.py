@@ -28,7 +28,7 @@ def generate_receipt(name, amount):
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype(FONT_PATH, 40)
 
-    draw.text((471, 491), name, fill="black", font=font)
+    draw.text((188, 165), name, fill="black", font=font)
     draw.text((488, 541), f"{amount} ₹", fill="red", font=font)
 
     file_name = f"receipt_{name}.png"
